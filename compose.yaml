@@ -1,0 +1,17 @@
+
+services:
+  phishlang:
+    image: phishlang:dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    gpus: all
+    working_dir: /app
+    volumes:
+      - ./src:/app:ro
+      - phishlang-data:/data:ro
+    command: python evaluate.py
+
+volumes:
+  phishlang-data:
+    external: true

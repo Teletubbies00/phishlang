@@ -1,0 +1,21 @@
+
+# 訓練資料
+src/benign_samples/
+src/phish_samples/
+training_data/parsed_samples_combined.zip
+
+# 實驗輸出
+experiments/
+src/results/
+src/runs/
+src/checkpoint-*/
+
+# Python 快取
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 編輯器與環境
+.vscode/
+.venv/
+.env

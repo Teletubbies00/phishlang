@@ -1,0 +1,9 @@
+
+.git
+.vscode
+**/__pycache__
+**/*.pyc
+src/benign_samples
+src/phish_samples
+src/model
+training_data
